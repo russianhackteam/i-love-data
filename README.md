@@ -10,4 +10,4 @@
 2.  ### Search for prepared datasets:
 * Get youtube video and cut it on frames
 * Use image search API 
-* Azure cognitive services
+* [Azure cognitive services (Bing Search)](https://azure.microsoft.com/ru-ru/services/cognitive-services/bing-custom-search/)
