@@ -14,3 +14,5 @@
 
 3.  ### Awesome links:
 * [Pyimagesearch](hhttps://www.pyimagesearch.com/2017/12/04/how-to-create-a-deep-learning-dataset-using-google-images/) blog about image processing and machine learning 
+
+* https://towardsdatascience.com/creating-a-dataset-using-an-api-with-python-dcc1607616d
