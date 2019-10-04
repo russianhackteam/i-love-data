@@ -11,3 +11,6 @@
 * Get youtube video and cut it on frames
 * Use image search API 
 * [Azure cognitive services (Bing Web Search API)](https://azure.microsoft.com/en-us/services/cognitive-services/bing-web-search-api/)
+
+3.  ### Awesome links:
+* https://www.pyimagesearch.com/2017/12/04/how-to-create-a-deep-learning-dataset-using-google-images/
