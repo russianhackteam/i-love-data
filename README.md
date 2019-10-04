@@ -28,3 +28,7 @@
 
 After we apply wrapper to the source image we can get seaparate cans and after it feed it directly to the network.
 ![box](https://i.ibb.co/7gqxrV3/0.png)
+
+
+5. ### Annotation:
+* [labelme](https://github.com/wkentaro/labelme) is a super simple python module with gui for any annotation task: classification, segmentation, bb-boxes and more. 
