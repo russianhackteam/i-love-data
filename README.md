@@ -13,4 +13,4 @@
 * [Azure cognitive services (Bing Web Search API)](https://azure.microsoft.com/en-us/services/cognitive-services/bing-web-search-api/)
 
 3.  ### Awesome links:
-* https://www.pyimagesearch.com/2017/12/04/how-to-create-a-deep-learning-dataset-using-google-images/
+* [Pyimagesearch](hhttps://www.pyimagesearch.com/2017/12/04/how-to-create-a-deep-learning-dataset-using-google-images/) blog about image processing and machine learning 
