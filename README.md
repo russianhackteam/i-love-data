@@ -20,6 +20,7 @@
 * [How to create dataset using API](https://towardsdatascience.com/creating-a-dataset-using-an-api-with-python-dcc1607616d)
 * [Remove Image Background Service](https://www.remove.bg/)
 * [Create Anime Characters with AI](https://make.girls.moe)
+* [Increase Image Resolution Service (via Convolutional neural network)](https://bigjpg.com)
 
 4.  ### Tool for object detections:
 * Classical problem is when you can google for some pictures of your interest (like "can of cola") and the picture you find contains several objects (different cans). So you need to somehow preprocess source image and extract regions of your interest. This is where pretrained YOLO or Retina may be useful (or your custom last trained dense layer using transfer learning). Implementation can be found [here](https://github.com/OlafenwaMoses/ImageAI/blob/master/imageai/Detection/README.md)
