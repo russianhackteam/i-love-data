@@ -14,7 +14,7 @@
 * [DuckDuckGo (DuckDuckGo Search API)](https://github.com/deepanprabhu/duckduckgo-images-api)
 
 3.  ### Awesome links:
-* [Pyimagesearch - blog about image processing and machine learning](hhttps://www.pyimagesearch.com/2017/12/04/how-to-create-a-deep-learning-dataset-using-google-images/)
+* [Pyimagesearch - blog about image processing and machine learning](https://www.pyimagesearch.com/2017/12/04/how-to-create-a-deep-learning-dataset-using-google-images/)
 
 * [How to create dataset using API](https://towardsdatascience.com/creating-a-dataset-using-an-api-with-python-dcc1607616d)
 
