@@ -14,9 +14,9 @@
 * [DuckDuckGo (DuckDuckGo Search API)](https://github.com/deepanprabhu/duckduckgo-images-api)
 
 3.  ### Awesome links:
-* [Pyimagesearch](hhttps://www.pyimagesearch.com/2017/12/04/how-to-create-a-deep-learning-dataset-using-google-images/) blog about image processing and machine learning 
+* [Pyimagesearch - blog about image processing and machine learning](hhttps://www.pyimagesearch.com/2017/12/04/how-to-create-a-deep-learning-dataset-using-google-images/)
 
-* https://towardsdatascience.com/creating-a-dataset-using-an-api-with-python-dcc1607616d
+* [How to create dataset using API](https://towardsdatascience.com/creating-a-dataset-using-an-api-with-python-dcc1607616d)
 
 4.  ### Tool for object detections:
 * Classical problem is when you can google for some pictures of your interest (like "can of cola") and the picture you find contains several objects (different cans). So you need to somehow preprocess source image and extract regions of your interest. This is where pretrained YOLO or Retina may be useful (or your custom last trained dense layer using transfer learning). Implementation can be found [here](https://github.com/OlafenwaMoses/ImageAI/blob/master/imageai/Detection/README.md)
