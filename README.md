@@ -16,7 +16,7 @@
 
 3.  ### Awesome links:
 * [Pyimagesearch - blog about image processing and machine learning](https://www.pyimagesearch.com/2017/12/04/how-to-create-a-deep-learning-dataset-using-google-images/)
-
+* [How to collect your deep learning dataset](https://towardsdatascience.com/how-to-collect-your-deep-learning-dataset-2e0eefc0ba24)
 * [How to create dataset using API](https://towardsdatascience.com/creating-a-dataset-using-an-api-with-python-dcc1607616d)
 
 4.  ### Tool for object detections:
