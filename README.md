@@ -6,6 +6,7 @@
 * [CoCo Dataset](http://cocodataset.org/#explore)
 * [ImageNet dataset](http://www.image-net.org/)
 * [Google dataset search](https://toolbox.google.com/datasetsearch)
+* [Google Images Download Python Script](https://github.com/hardikvasa/google-images-download)
 
 2.  ### Search for prepared datasets:
 * Get youtube video and cut it on frames
