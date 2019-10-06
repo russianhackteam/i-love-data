@@ -27,10 +27,12 @@
 * [XGBoost - Gradient Boosting Library](https://github.com/dmlc/xgboost)
 * [SarcasmDetection using Neural Network](https://github.com/AniSkywalker/SarcasmDetection)
 * [Style Transfer Network (NVIDIA Corporation)](https://github.com/NVIDIA/FastPhotoStyle)
-<img src="https://raw.githubusercontent.com/NVIDIA/FastPhotoStyle/master/demo_with_segmentation.gif" width="800" title="GIF"> 
+<img src="https://raw.githubusercontent.com/NVIDIA/FastPhotoStyle/master/demo_with_segmentation.gif" width="300" title="GIF"> 
 
 * [DeepPavlov framework (Text QA, ODQA, Ranking, Entity recognition, Intent classification, Insult detection)](https://github.com/deepmipt/DeepPavlov)
 
+* [YOLO (Real-Time Object Detection)](https://github.com/pjreddie/darknet/wiki/YOLO:-Real-Time-Object-Detection)
+<img src="https://user-images.githubusercontent.com/4498580/66269424-e3e56480-e850-11e9-967b-a6561829ca7d.gif" width="300" title="GIF"> 
 
 
 4.  ### Tool for object detections:
