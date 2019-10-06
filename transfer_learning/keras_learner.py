@@ -4,14 +4,17 @@ import random
 import string
 
 import numpy as np
+from keras.optimizers import RMSprop, Adam
 from sklearn.metrics import precision_recall_curve
 import matplotlib.pyplot as plt
 
+import pandas as pd
 import keras
 from keras.callbacks import ModelCheckpoint, ReduceLROnPlateau, EarlyStopping
 from keras.preprocessing.image import ImageDataGenerator
 from keras_tqdm import TQDMNotebookCallback
 from keras.preprocessing import image
+from sklearn.model_selection import train_test_split
 
 from utils import preprocessed_input, base_sizes, base_network_init, base_output_pooling
 from visualization.saliency_heatmap import SaliencyHeatMap
@@ -64,6 +67,7 @@ class KerasLearner:
                                                zoom_range=0.2,
                                                horizontal_flip=True,
                                                fill_mode='nearest')
+
             train_augs_generator = train_datagen.flow_from_dataframe(train,
                                                                      x_col=x_col,
                                                                      y_col=y_col,
@@ -241,3 +245,18 @@ class KerasLearner:
             ReduceLROnPlateau(monitor='val_loss', patience=3, verbose=1, factor=0.65, min_lr=0.00001),
             EarlyStopping(monitor='val_loss', patience=8),
             TQDMNotebookCallback()]
+
+if __name__ == '__main__':
+    frame = pd.read_csv('labeled_data.csv')
+    train, val = train_test_split(data, stratify=frame.target, test_size=0.2, shuffle=True, random_state=555)
+
+    size = (299, 299)
+    batch_size = 32
+    optimizer = Adam()
+
+    learner = KerasLearner(objective='binary', base='inceptionv3', layers=[512, 256], dropout=[0.5, 0.5])
+    history = learner.fit_from_frame(train, val, x_col='image_path', y_col='target', optimizer=optimizer, epochs=10)
+
+    learner.save('inception_base.pickle')
+
+    # learner.predict_from_file(img_name='./test_img.png')
