@@ -3,7 +3,48 @@ Use "pip install azure-cognitiveservices-search-imagesearch" before run the code
 
 from azure.cognitiveservices.search.imagesearch import ImageSearchAPI
 from msrest.authentication import CognitiveServicesCredentials
+import urllib.request
+from urllib.request import Request, urlopen
+from urllib.request import URLError, HTTPError
+from urllib.parse import quote
+import http.client
+from http.client import IncompleteRead, BadStatusLine
 
+'''This function download your image from url to your downloads folder'''
+
+def download_image(image_url):
+    main_directory = "downloads"
+    extensions = (".jpg", ".gif", ".png", ".bmp", ".svg", ".webp", ".ico")
+    url = image_url
+    try:
+        os.makedirs(main_directory)
+    except OSError as e:
+        if e.errno != 17:
+            raise
+        pass
+    req = Request(url, headers={
+            "User-Agent": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.27 Safari/537.17"})
+    response = urlopen(req, None, 10)
+    data = response.read()
+    response.close()
+    image_name = str(url[(url.rfind('/')) + 1:])
+    if '?' in image_name:
+        image_name = image_name[:image_name.find('?')]
+    if any(map(lambda extension: extension in image_name, extensions)):
+        file_name = main_directory + "/" + image_name
+    else:
+        file_name = main_directory + "/" + image_name + ".jpg"
+        image_name = image_name + ".jpg"
+    try:
+        output_file = open(file_name, 'wb')
+        output_file.write(data)
+        output_file.close()
+    except IOError as e:
+        raise e
+    except OSError as e:
+        raise e
+    print("completed ====> " + image_name.encode('raw_unicode_escape').decode('utf-8'))
+    
 '''Instead YOUR_SUBSCRIPTION_KEY write your subcription key on azure and also instead
 YOUR_THEME_OF_SEARCH write your request to Bing for the images you want to find
 
@@ -39,3 +80,9 @@ else:
 
 some_image = image_results.value[1]
 print(some_image.content_url)
+
+'''Download all images'''
+
+for i in range(len(image_results.value)):
+    image = image_results.value[i]
+    download_image(image.content_url)
