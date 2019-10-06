@@ -44,11 +44,6 @@ class KerasLearner:
         self._class_to_idx = None
         self._idx_to_class = None
 
-    def fit(self, train_generator, val_generator, train_steps, val_steps, epochs, unfreeze=0, optimizer=None,
-            use_default_callbacks=True,
-            custom_callbacks=None, load_from_checkpoint=False):
-        pass  # optional, maybe won't be implemented at all
-
     def fit_from_frame(self, train, val, x_col, y_col, train_augs_generator=None,
                        val_augs_generator=None, epochs=10, batch_size=32, unfreeze=0, optimizer=None,
                        use_default_callbacks=True, custom_callbacks=None,
