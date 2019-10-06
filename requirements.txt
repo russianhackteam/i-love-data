@@ -1,0 +1,7 @@
+azure-cognitiveservices-search-imagesearch
+google_images_download
+flickr-api
+selenium-wire
+dataclasses-json
+bs4
+lxml
