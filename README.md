@@ -26,6 +26,9 @@
 ### ML links:
 * [XGBoost - Gradient Boosting Library](https://github.com/dmlc/xgboost)
 * [SarcasmDetection using Neural Network](https://github.com/AniSkywalker/SarcasmDetection)
+* [Style Transfer Network (NVIDIA Corporation)](https://github.com/NVIDIA/FastPhotoStyle)
+<img src="https://raw.githubusercontent.com/NVIDIA/FastPhotoStyle/master/demo_with_segmentation.gif" width="800" title="GIF"> 
+
 
 
 4.  ### Tool for object detections:
