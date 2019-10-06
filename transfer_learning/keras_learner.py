@@ -247,15 +247,15 @@ class KerasLearner:
             TQDMNotebookCallback()]
 
 if __name__ == '__main__':
-    frame = pd.read_csv('labeled_data.csv')
-    train, val = train_test_split(data, stratify=frame.target, test_size=0.2, shuffle=True, random_state=555)
+    frame = pd.read_csv('converted_data.csv')
+    train, val = train_test_split(frame, stratify=frame.target, test_size=0.2, shuffle=True, random_state=555)
 
     size = (299, 299)
     batch_size = 32
     optimizer = Adam()
 
     learner = KerasLearner(objective='binary', base='inceptionv3', layers=[512, 256], dropout=[0.5, 0.5])
-    history = learner.fit_from_frame(train, val, x_col='image_path', y_col='target', optimizer=optimizer, epochs=10)
+    history = learner.fit_from_frame(train, val, x_col='path', y_col='target', optimizer=optimizer, epochs=10)
 
     learner.save('inception_base.pickle')
 
