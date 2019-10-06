@@ -28,6 +28,7 @@
 * [SarcasmDetection using Neural Network](https://github.com/AniSkywalker/SarcasmDetection)
 * [Style Transfer Network (NVIDIA Corporation)](https://github.com/NVIDIA/FastPhotoStyle)
 <img src="https://raw.githubusercontent.com/NVIDIA/FastPhotoStyle/master/demo_with_segmentation.gif" width="800" title="GIF"> 
+* [DeepPavlov framework (Text QA, ODQA, Ranking, Entity recognition, Intent classification, Insult detection)](https://github.com/deepmipt/DeepPavlov)
 
 
 
