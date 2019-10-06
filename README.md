@@ -25,6 +25,8 @@
 
 ### ML links:
 * [XGBoost - Gradient Boosting Library](https://github.com/dmlc/xgboost)
+* [SarcasmDetection using Neural Network](https://github.com/AniSkywalker/SarcasmDetection)
+
 
 4.  ### Tool for object detections:
 * Classical problem is when you can google for some pictures of your interest (like "can of cola") and the picture you find contains several objects (different cans). So you need to somehow preprocess source image and extract regions of your interest. This is where pretrained YOLO or Retina may be useful (or your custom last trained dense layer using transfer learning). Implementation can be found [here](https://github.com/OlafenwaMoses/ImageAI/blob/master/imageai/Detection/README.md)
