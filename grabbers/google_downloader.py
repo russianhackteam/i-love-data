@@ -1,7 +1,14 @@
-from google_images_download import google_images_download   #importing the library
+from google_images_download import google_images_download
+import sys
 
-response = google_images_download.googleimagesdownload()   #class instantiation
+def search(query,limit):
+    response = google_images_download.googleimagesdownload()   
+    arguments = {"keywords":query,"limit":limit,"print_urls":True}   
+    paths = response.download(arguments)  
+    print(paths)
 
-arguments = {"keywords":"Polar bears,baloons,Beaches","limit":20,"print_urls":True}   #creating list of arguments
-paths = response.download(arguments)   #passing the arguments to the function
-print(paths) 
+def main(query,limit):
+    search(query,limit) 
+
+if __name__ == "__main__":
+    main(sys.argv[1],sys.argv[2])
